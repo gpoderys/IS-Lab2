@@ -98,6 +98,4 @@ for indx = 1:length(x1)
     y = v1_2;
     Y(indx) = y;
 end
-hold on
-plot(x1, Y, 'b+'),plot(x2, Y, 'r+')
-hold off
+hold on, plot(x1, Y, 'b+'),plot(x2, Y, 'r+'), hold off
