@@ -1,7 +1,6 @@
 close all
 clear
 clc
-
 % 1. Duomenu paruosimas
 x1 = [0.1:1/22:1];
 x2 = [0.1:1/22:1];
@@ -10,7 +9,6 @@ figure(1), plot(x1, d), grid on;
 
 % 2. Pasirinkti struktūrą
 % pirmo (paslėptojo) sluoksnio ryšių svoriai
-
 w11_1 = randn(1);
 w12_1 = randn(1);
 w13_1 = randn(1);
@@ -23,7 +21,6 @@ b1_1 = randn(1);
 b2_1 = randn(1);
 b3_1 = randn(1);
 b4_1 = randn(1);
-
 % antro sluoksnio(išėjimo) ryšių svoriai
 w11_2 = randn(1);
 w12_2 = randn(1);
@@ -79,7 +76,6 @@ for indx = 1:length(x1)
    b2_1 = b2_1 + lr*delta2_1;
    b3_1 = b3_1 + lr*delta3_1;
    b4_1 = b4_1 + lr*delta4_1;  
-
 end
 end
 
