@@ -30,7 +30,7 @@ b1_2 = randn(1);
 
 % 3. Skaičiuojamas tinklo atsakas
 lr = 0.5;
-for ind_n = 1:10000;
+for ind_n = 1:10000
 for indx = 1:length(x1)
     % pirmojo sluoksnio atsakas
     v1_1 = x1(indx)* w11_1 + x2(indx)*w21_1 + b1_1;
@@ -51,7 +51,7 @@ for indx = 1:length(x1)
     
     % 4. Ryšių svorių atnaujinimas
     % skaičiuojamas klaidos gradientas išėjimo sluoksnio neuronui
-    delta1_2 = (1-(tanh(v1_2))^2)*e;
+    delta1_2 = e;
     % skaičiuojamas klaidos gradientas paslepto sluoksnio neuronams
     delta1_1 = y1_1*(1 - y1_1)*delta1_2*w11_2;
     delta2_1 = y2_1*(1 - y2_1)*delta1_2*w12_2;
